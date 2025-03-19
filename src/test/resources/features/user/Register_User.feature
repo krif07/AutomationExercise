@@ -1,6 +1,7 @@
 @register @all
 Feature: Register a user with correct and incorrect data
 
+  @incomplete_register
   Scenario: Register User
     Given I access the automation exercise home page
     And I should see that home page is visible successfully
@@ -21,5 +22,6 @@ Feature: Register a user with correct and incorrect data
 #  17. Click 'Delete Account' button
 #  18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
 
+  @test
   Scenario: Register User with existing email
     Given I access the automation exercise home page

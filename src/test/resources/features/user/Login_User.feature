@@ -7,11 +7,13 @@ Feature: Login User with correct and incorrect information
     When I Click on Signup Login button
     Then I should see login form title 'Login to your account' is visible
 
+  @correct_login
   Scenario: Login User with correct email and password
     Given I enter a email krif07@gmail.com and password pass123
     When I Click on Login button
     Then I should see the logged in user name 'Cristian Fernando'
 
+  @incorrect_login
   Scenario Outline: Login User with incorrect email and password
     Given I enter a email <email> and password <password>
     When I Click on Login button
