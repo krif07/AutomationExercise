@@ -7,9 +7,6 @@
     <list default="true" id="6d3cb1ce-a0f3-46a7-a6ea-205ebc27d2d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CucumberTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CucumberTestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/exercise/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/exercise/driver/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/exercise/stepdefinitions/home/HomeStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/exercise/stepdefinitions/home/HomeStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/properties/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/properties/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
