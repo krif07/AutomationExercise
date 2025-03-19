@@ -6,7 +6,7 @@ Feature: Register a user with correct and incorrect data
     And I should see that home page is visible successfully
     When I Click on Signup Login button
     And I should see new user form title 'New User Signup!' is visible
-    And I enter a name Cristian and email address krif07@gmail.com
+    And I enter a name Cristian and email address krif07@hotmail.com
     And I Click on Signup button
     Then I should see that 'ENTER ACCOUNT INFORMATION' is visible
 

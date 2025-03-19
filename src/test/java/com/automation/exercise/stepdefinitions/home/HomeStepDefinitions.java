@@ -30,4 +30,8 @@ public class HomeStepDefinitions {
     public void shouldSeeHomePageVisible() {
         Assert.assertEquals(homePage.getTitle(), "Automation");
     }
+    @Then("I should see the logged in user name {string}")
+    public void shouldSeeLoggedInUser(String name) {
+        Assert.assertEquals(homePage.getLoggedInUserName(), name);
+    }
 }

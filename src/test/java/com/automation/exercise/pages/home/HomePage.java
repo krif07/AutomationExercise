@@ -12,10 +12,16 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//i[@class='fa fa-lock']/..")
     private WebElement SIGNUP_LOGIN_BUTTON;
 
+    @FindBy(xpath = "//i[@class='fa fa-user']/../b")
+    private WebElement LOGGED_IN_USER_B;
+
     public String getTitle() {
         return getText(TITLE_SPAN);
     }
     public void clickSignupLogin() {
         click(SIGNUP_LOGIN_BUTTON);
+    }
+    public String getLoggedInUserName() {
+        return getText(LOGGED_IN_USER_B);
     }
 }
