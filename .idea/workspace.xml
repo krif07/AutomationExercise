@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6d3cb1ce-a0f3-46a7-a6ea-205ebc27d2d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/exercise/config/ReadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/exercise/config/ReadProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/exercise/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/exercise/hooks/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/properties/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/properties/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/exercise/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/exercise/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/exercise/tasks/TaskHomeNavigate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/exercise/tasks/TaskHomeNavigate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

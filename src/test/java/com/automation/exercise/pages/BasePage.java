@@ -20,16 +20,19 @@ public class BasePage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(getWaitTimeOut()));
         PageFactory.initElements(driver, this);
     }
+    public void navigateToUrl(String url) {
+        driver.get(url);
+    }
     protected void click(WebElement button) {
-        wait.until(ExpectedConditions.elementToBeClickable(button));
-        button.click();
+        wait.until(ExpectedConditions.elementToBeClickable(button))
+                .click();
     }
     protected void enterText(WebElement input, String text) {
-        wait.until(ExpectedConditions.visibilityOf(input));
-        input.sendKeys(text);
+        wait.until(ExpectedConditions.visibilityOf(input))
+                .sendKeys(text);
     }
     protected String getText(WebElement element) {
-        wait.until(ExpectedConditions.visibilityOf(element));
-        return element.getText();
+        return wait.until(ExpectedConditions.visibilityOf(element))
+                .getText();
     }
 }
