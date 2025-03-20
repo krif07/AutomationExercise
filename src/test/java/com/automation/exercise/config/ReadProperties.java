@@ -8,6 +8,7 @@ public class ReadProperties {
     private static String BROWSER_TYPE;
     private static String URL;
     private static int WAIT_TIME_OUT;
+    private static String TAKE_PICTURES;
 
     public static void setupProperties() {
         Properties properties = new Properties();
@@ -19,6 +20,7 @@ public class ReadProperties {
             URL = properties.getProperty("url").trim();
             String time = properties.getProperty("wait.timeout.seconds").trim();
             WAIT_TIME_OUT = Integer.parseInt(time);
+            TAKE_PICTURES = properties.getProperty("take.pictures");
         } catch (IOException ioException) {
             System.out.println(ioException.getMessage());
         }
@@ -31,5 +33,8 @@ public class ReadProperties {
     }
     public static int getWaitTimeOut() {
         return WAIT_TIME_OUT;
+    }
+    public static String getTakePictures() {
+        return TAKE_PICTURES;
     }
 }
