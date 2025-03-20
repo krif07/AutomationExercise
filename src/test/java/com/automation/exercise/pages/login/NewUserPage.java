@@ -18,6 +18,10 @@ public class NewUserPage extends BasePage {
     @FindBy(css = "button[data-qa=signup-button]")
     private WebElement SIGNUP_FORM_SIGNUP_BUTTON;
 
+    public NewUserPage() {
+        super();
+    }
+
     public String getSignupFormTitle() {
         return getText(SIGNUP_FORM_TITLE_H2);
     }

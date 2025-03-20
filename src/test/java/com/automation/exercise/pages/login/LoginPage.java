@@ -1,5 +1,6 @@
 package com.automation.exercise.pages.login;
 
+import com.automation.exercise.config.ReadProperties;
 import com.automation.exercise.pages.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,6 +22,9 @@ public class LoginPage extends BasePage {
     @FindBy(css = ".login-form p")
     private WebElement FORM_ERROR_MESSAGE_P;
 
+    public LoginPage() {
+        super();
+    }
     public void enterEmailAndPassword(String email, String password) {
         enterText(FORM_EMAIL_INPUT, email);
         enterText(FORM_PASSWORD_INPUT, password);

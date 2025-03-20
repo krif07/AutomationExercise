@@ -7,10 +7,10 @@ import org.testng.Assert;
 
 public class LoginStepDefinitions {
 
-    LoginPage loginPage;
+    private LoginPage loginPage;
 
-    public LoginStepDefinitions() {
-        loginPage = new LoginPage();
+    public LoginStepDefinitions(LoginPage loginPage) {
+        this.loginPage = loginPage;
     }
 
     @When("I enter a email {word} and password {word}")

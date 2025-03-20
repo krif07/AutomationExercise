@@ -11,8 +11,8 @@ public class HomeStepDefinitions {
 
     private HomePage homePage;
 
-    public HomeStepDefinitions() {
-        homePage = new HomePage();
+    public HomeStepDefinitions(HomePage homePage) {
+        this.homePage = homePage;
     }
 
     @Given("I access the automation exercise home page")

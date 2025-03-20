@@ -15,6 +15,10 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//i[@class='fa fa-user']/../b")
     private WebElement LOGGED_IN_USER_B;
 
+    public HomePage() {
+        super();
+    }
+
     public String getTitle() {
         return getText(TITLE_SPAN);
     }

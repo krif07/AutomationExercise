@@ -7,22 +7,22 @@ import org.testng.Assert;
 
 public class NewUserStepDefinitions {
 
-    NewUserPage loginPage;
+    private NewUserPage newUserPage;
 
-    public NewUserStepDefinitions() {
-        loginPage = new NewUserPage();
+    public NewUserStepDefinitions(NewUserPage newUserPage) {
+        this.newUserPage = newUserPage;
     }
 
     @When("I enter a name {word} and email address {word}")
     public void enterNameAndEmail(String name, String email) {
-        loginPage.enterNameAndEmail(name, email);
+        newUserPage.enterNameAndEmail(name, email);
     }
     @When("I Click on Signup button")
     public void clickSignupButton() {
-        loginPage.clickSignup();
+        newUserPage.clickSignup();
     }
     @Then("I should see new user form title {string} is visible")
     public void shouldSeeTextVisible(String text) {
-        Assert.assertEquals(loginPage.getSignupFormTitle(), text);
+        Assert.assertEquals(newUserPage.getSignupFormTitle(), text);
     }
 }

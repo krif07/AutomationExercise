@@ -6,10 +6,10 @@ import org.testng.Assert;
 
 public class SignupStepDefinitions {
 
-    SignupPage signupPage;
+    private SignupPage signupPage;
 
-    public SignupStepDefinitions() {
-        signupPage = new SignupPage();
+    public SignupStepDefinitions(SignupPage signupPage) {
+        this.signupPage = signupPage;
     }
 
     @Then("I should see that {string} is visible")
