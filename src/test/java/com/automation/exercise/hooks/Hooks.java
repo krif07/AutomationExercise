@@ -1,6 +1,6 @@
 package com.automation.exercise.hooks;
 
-import com.automation.exercise.config.ReadProperties;
+import com.automation.exercise.utils.ReadProperties;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;

@@ -1,6 +1,5 @@
 package com.automation.exercise.pages.login;
 
-import com.automation.exercise.config.ReadProperties;
 import com.automation.exercise.pages.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

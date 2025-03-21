@@ -1,11 +1,10 @@
 package com.automation.exercise.questions;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static com.automation.exercise.config.ReadProperties.getWaitTimeOut;
+import static com.automation.exercise.utils.ReadProperties.getWaitTimeOut;
 import static com.automation.exercise.driver.DriverFactory.getDriver;
 
 public class QuestionBase {

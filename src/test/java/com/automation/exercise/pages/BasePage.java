@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static com.automation.exercise.config.ReadProperties.getWaitTimeOut;
+import static com.automation.exercise.utils.ReadProperties.getWaitTimeOut;
 import static com.automation.exercise.driver.DriverFactory.getDriver;
 
 public class BasePage {
@@ -45,5 +45,8 @@ public class BasePage {
     }
     protected void enterToAlertText(String text) {
         getAlert().sendKeys(text);
+    }
+    protected void waitFor(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
     }
 }

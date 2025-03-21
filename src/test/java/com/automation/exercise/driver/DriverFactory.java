@@ -1,6 +1,6 @@
 package com.automation.exercise.driver;
 
-import com.automation.exercise.config.ReadProperties;
+import com.automation.exercise.utils.ReadProperties;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

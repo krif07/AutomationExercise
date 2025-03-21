@@ -1,4 +1,4 @@
-package com.automation.exercise.config;
+package com.automation.exercise.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
