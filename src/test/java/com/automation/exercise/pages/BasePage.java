@@ -1,5 +1,6 @@
 package com.automation.exercise.pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -34,5 +35,15 @@ public class BasePage {
     protected String getText(WebElement element) {
         return wait.until(ExpectedConditions.visibilityOf(element))
                 .getText();
+    }
+    private Alert getAlert() {
+        wait.until(ExpectedConditions.alertIsPresent());
+        return driver.switchTo().alert();
+    }
+    protected String getAlertText() {
+        return getAlert().getText();
+    }
+    protected void enterToAlertText(String text) {
+        getAlert().sendKeys(text);
     }
 }
