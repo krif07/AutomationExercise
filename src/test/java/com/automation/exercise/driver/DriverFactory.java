@@ -4,8 +4,10 @@ import com.automation.exercise.utils.ReadProperties;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class DriverFactory {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
@@ -17,7 +19,9 @@ public class DriverFactory {
         switch (browser.toLowerCase()) {
             case "firefox" -> {
                 WebDriverManager.firefoxdriver().setup();
-                webDriver = new FirefoxDriver();
+                FirefoxOptions options = new FirefoxOptions();
+                options.addArguments("--headless");
+                webDriver = new FirefoxDriver(options);
             }
             case "edge" -> {
                 WebDriverManager.edgedriver().setup();
@@ -25,7 +29,11 @@ public class DriverFactory {
             }
             default -> {
                 WebDriverManager.chromedriver().setup();
-                webDriver = new ChromeDriver();
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
+                webDriver = new ChromeDriver(options);
             }
 
         }
