@@ -1,7 +1,9 @@
 package com.automation.exercise.stepdefinitions.user;
 
 import com.automation.exercise.pages.login.SignupPage;
+import com.automation.exercise.tasks.TaskNavigateToNewUser;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.testng.Assert;
 
 public class SignupStepDefinitions {

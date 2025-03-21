@@ -24,4 +24,5 @@ Feature: Register a user with correct and incorrect data
 
   @test
   Scenario: Register User with existing email
-    Given I access the automation exercise home page
+    Given I access the automation exercise new user page
+    And I should see new user form title 'New User Signup!' is visible

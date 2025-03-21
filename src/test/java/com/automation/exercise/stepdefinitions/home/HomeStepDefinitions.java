@@ -1,7 +1,7 @@
 package com.automation.exercise.stepdefinitions.home;
 
 import com.automation.exercise.pages.home.HomePage;
-import com.automation.exercise.tasks.TaskHomeNavigate;
+import com.automation.exercise.tasks.TaskNavigateToHome;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,15 +10,16 @@ import org.testng.Assert;
 public class HomeStepDefinitions {
 
     private HomePage homePage;
+    private TaskNavigateToHome homeNavigate;
 
-    public HomeStepDefinitions(HomePage homePage) {
+    public HomeStepDefinitions(HomePage homePage, TaskNavigateToHome homeNavigate) {
         this.homePage = homePage;
+        this.homeNavigate = homeNavigate;
     }
 
     @Given("I access the automation exercise home page")
     public void accessAutomationExerciseHomePage() {
-        TaskHomeNavigate homeNavigate = new TaskHomeNavigate();
-        homeNavigate.goToHomePage();
+        homeNavigate.navigate();
     }
     @When("I Click on Signup Login button")
     public void clickOnSignupLoginButton() {
