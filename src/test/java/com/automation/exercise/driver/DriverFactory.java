@@ -21,7 +21,6 @@ public class DriverFactory {
         WebDriver webDriver;
 
         try{
-            URL seleniumUrl = new URL("http://chrome:4444/wd/hub");
             switch (browser.toLowerCase()) {
                 case "firefox" -> {
                     WebDriverManager.firefoxdriver().setup();
@@ -33,9 +32,17 @@ public class DriverFactory {
                     WebDriverManager.edgedriver().setup();
                     webDriver = new EdgeDriver();
                 }
-                default -> {
+                case "chrome" -> {
+                    WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
                     //options.addArguments("--headless");
+                    options.addArguments("--no-sandbox");
+                    options.addArguments("--disable-dev-shm-usage");
+                    webDriver = new ChromeDriver(options);
+                }
+                default -> {
+                    URL seleniumUrl = new URL("http://chrome:4444/wd/hub");
+                    ChromeOptions options = new ChromeOptions();
                     options.addArguments("--no-sandbox");
                     options.addArguments("--disable-dev-shm-usage");
                     webDriver = new RemoteWebDriver(seleniumUrl,options);
