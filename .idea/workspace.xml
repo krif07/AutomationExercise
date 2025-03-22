@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3cb1ce-a0f3-46a7-a6ea-205ebc27d2d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/testng/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/exercise/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/exercise/driver/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CucumberTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CucumberTestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +44,7 @@
     "Maven.AutomationExercise [validate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C:/Users/AsusTUF/Exercism/java/AutomationExercise/src/test/java/testng/testng.xml.executor": "Run",
     "TestNG.CucumberTestRunner.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -60,7 +61,7 @@
       <recent name="C:\Users\AsusTUF\Exercism\java\AutomationExercise\src\test\resources\features" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CucumberTestRunner">
+  <component name="RunManager" selected="TestNG.C:/Users/AsusTUF/Exercism/java/AutomationExercise/src/test/java/testng/testng.xml">
     <configuration name="Feature: Register_User" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/user/Register_User.feature" />
@@ -100,6 +101,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/AsusTUF/Exercism/java/AutomationExercise/src/test/java/testng/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationExercise" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/testng/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CucumberTestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationExercise" />
       <option name="PACKAGE_NAME" value="" />
@@ -113,6 +124,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/AsusTUF/Exercism/java/AutomationExercise/src/test/java/testng/testng.xml" />
         <item itemvalue="TestNG.CucumberTestRunner" />
         <item itemvalue="Cucumber Java.Scenario: Register User" />
         <item itemvalue="Cucumber Java.Feature: Register_User" />
