@@ -17,7 +17,10 @@ public class DriverFactory {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     private static WebDriver createDriver() {
-        String browser = ReadProperties.getBrowserType();
+        String browser = System.getProperty("browserType");
+        if(browser == null || browser.isEmpty()) {
+            browser = ReadProperties.getBrowserType();
+        }
         WebDriver webDriver;
 
         try{
